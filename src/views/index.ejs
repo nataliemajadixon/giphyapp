@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>HOME PAGE ! ! !</h1>
+
+        <% data.map(gif => {
+            %>
+            <p><%= gif.title %></p>
+            <iframe src="<%= gif.embed_url %>"></iframe>
+        
+        <%
+        })
+        %>
+    </body>
+</html>
