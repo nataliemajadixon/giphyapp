@@ -19,3 +19,7 @@ server.get('/', (req, res) => {
         .then(data => res.render('index', {data: data.data}))
         .catch((error) => console.error('Error from API'))
 })
+
+server.listen(PORT, () => {
+    console.log(`Listening on ${PORT}`)
+})
